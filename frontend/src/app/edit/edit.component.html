@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-11 col-md-6 col-lg-5">
+            <div class="main">
+                <form #form="ngForm" (ngSubmit)="onSubmit(formData)"> 
+                    <div class="mb-4">
+                        <label  class="form-label">Name</label>
+                        <input type="text" class="form-control" name="name" #name="ngModel" [(ngModel)]="formData.name">
+                    </div>
+                    <div class="email">
+                    <div class="mb-4  email-input">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" name="email" #email="ngModel" [(ngModel)]="formData.email">
+                    </div>
+                    <div class="mb-4 age-input">
+                        <label class="form-label">Age</label>
+                        <input type="number" class="form-control" name="age" #age="ngModel" [(ngModel)]="formData.age">
+                    </div>
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label">Course</label>
+                        <input type="text" class="form-control" name="course" #course="ngModel" [(ngModel)]="formData.course">
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label">Year of Completion</label>
+                        <input type="number" class="form-control mb-2" name="year" #year="ngModel" [(ngModel)]="formData.year">
+                    </div> 
+                   
+                    <button type="submit" class="btn btn-primary">Create</button>&nbsp;<button type="" class="btn btn-warning" routerLink="/main">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</div>

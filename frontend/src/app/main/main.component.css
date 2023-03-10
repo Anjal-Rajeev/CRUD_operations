@@ -1,0 +1,14 @@
+.table{
+    text-align: center;
+    margin-top: 30px;
+}
+button{
+    font-size: small;
+}
+
+@media screen and (max-width: 480px) {
+	/* Styles for mobile devices */
+    .table-main{
+        overflow-x: auto;
+    }
+}

@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="table-main">
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Age</th>
+            <th scope="col">Course</th>
+            <th scope="col">Year of Completion</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let student of students; let i=index">
+            <th scope="row">{{i+1}}</th>
+            <td>{{student.name}}</td>
+            <td>{{student.email}}</td>
+            <td>{{student.age}}</td>
+            <td>{{student.course}}</td>
+            <td>{{student.year}}</td>
+            <td><button class="btn btn-primary" (click)="editStudent(student._id)">Edit</button>&nbsp;<button class="btn btn-danger" (click)="deleteStudent(student._id)">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+</div>

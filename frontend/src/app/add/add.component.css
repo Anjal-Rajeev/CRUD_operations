@@ -1,0 +1,19 @@
+.row{
+    justify-content: center;
+}
+.email{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.email-input{
+    width: 65%;
+}
+.age-input{
+    width: 30%;
+}
+
+.container{
+    margin-top: 40px;
+}
